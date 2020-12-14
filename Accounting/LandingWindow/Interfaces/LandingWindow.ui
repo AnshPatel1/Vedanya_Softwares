@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>LandingWindow</class>
+    <widget class="QMainWindow" name="LandingWindow">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>1000</width>
+                <height>650</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>MainWindow</string>
+        </property>
+        <property name="autoFillBackground">
+            <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+            <string notr="true">#LandingWindow{background-color: rgb(226, 255, 250)}</string>
+        </property>
+        <widget class="QWidget" name="centralwidget">
+            <widget class="QPushButton" name="report">
+                <property name="enabled">
+                    <bool>true</bool>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>50</x>
+                        <y>330</y>
+                        <width>200</width>
+                        <height>200</height>
+                    </rect>
+                </property>
+                <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="autoFillBackground">
+                    <bool>false</bool>
+                </property>
+                <property name="styleSheet">
+                    <string notr="true">border-style: solid;
+                        border-radius:500px;
+                        border-color: red;
+                        max-width:200px;
+                        max-height:200px;
+                        min-width:200px;
+                        min-height:200px;
+                    </string>
+                </property>
+                <property name="text">
+                    <string/>
+                </property>
+                <property name="icon">
+                    <iconset>
+                        <normaloff>../../assets/report.png</normaloff>../../assets/report.png
+                    </iconset>
+                </property>
+                <property name="iconSize">
+                    <size>
+                        <width>200</width>
+                        <height>200</height>
+                    </size>
+                </property>
+                <property name="autoDefault">
+                    <bool>false</bool>
+                </property>
+                <property name="default">
+                    <bool>false</bool>
+                </property>
+                <property name="flat">
+                    <bool>true</bool>
+                </property>
+            </widget>
+            <widget class="QPushButton" name="make_entry">
+                <property name="geometry">
+                    <rect>
+                        <x>280</x>
+                        <y>330</y>
+                        <width>200</width>
+                        <height>200</height>
+                    </rect>
+                </property>
+                <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="styleSheet">
+                    <string>border-style: solid;
+                        border-radius:500px;
+                        border-color: red;
+                        max-width:200px;
+                        max-height:200px;
+                        min-width:200px;
+                        min-height:200px;
+                    </string>
+                </property>
+                <property name="text">
+                    <string/>
+                </property>
+                <property name="icon">
+                    <iconset>
+                        <normaloff>../../assets/add.png</normaloff>../../assets/add.png
+                    </iconset>
+                </property>
+                <property name="iconSize">
+                    <size>
+                        <width>215</width>
+                        <height>215</height>
+                    </size>
+                </property>
+                <property name="autoDefault">
+                    <bool>false</bool>
+                </property>
+                <property name="default">
+                    <bool>false</bool>
+                </property>
+                <property name="flat">
+                    <bool>false</bool>
+                </property>
+            </widget>
+            <widget class="QPushButton" name="backup">
+                <property name="geometry">
+                    <rect>
+                        <x>510</x>
+                        <y>330</y>
+                        <width>200</width>
+                        <height>200</height>
+                    </rect>
+                </property>
+                <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="autoFillBackground">
+                    <bool>false</bool>
+                </property>
+                <property name="styleSheet">
+                    <string>border-style: solid;
+                        border-radius:500px;
+                        border-color: red;
+                        max-width:200px;
+                        max-height:200px;
+                        min-width:200px;
+                        min-height:200px;
+                    </string>
+                </property>
+                <property name="text">
+                    <string/>
+                </property>
+                <property name="icon">
+                    <iconset>
+                        <normaloff>../../assets/backup.png</normaloff>../../assets/backup.png
+                    </iconset>
+                </property>
+                <property name="iconSize">
+                    <size>
+                        <width>200</width>
+                        <height>200</height>
+                    </size>
+                </property>
+                <property name="autoDefault">
+                    <bool>false</bool>
+                </property>
+                <property name="default">
+                    <bool>false</bool>
+                </property>
+                <property name="flat">
+                    <bool>false</bool>
+                </property>
+            </widget>
+            <widget class="QPushButton" name="exit">
+                <property name="geometry">
+                    <rect>
+                        <x>740</x>
+                        <y>330</y>
+                        <width>200</width>
+                        <height>200</height>
+                    </rect>
+                </property>
+                <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="styleSheet">
+                    <string notr="true">border-style: solid;
+                        border-radius:500px;
+                        border-color: red;
+                        max-width:200px;
+                        max-height:200px;
+                        min-width:200px;
+                        min-height:200px;
+                    </string>
+                </property>
+                <property name="text">
+                    <string/>
+                </property>
+                <property name="icon">
+                    <iconset>
+                        <normaloff>../../assets/exit.png</normaloff>../../assets/exit.png
+                    </iconset>
+                </property>
+                <property name="iconSize">
+                    <size>
+                        <width>200</width>
+                        <height>200</height>
+                    </size>
+                </property>
+                <property name="autoDefault">
+                    <bool>false</bool>
+                </property>
+                <property name="default">
+                    <bool>false</bool>
+                </property>
+                <property name="flat">
+                    <bool>false</bool>
+                </property>
+            </widget>
+            <widget class="QLabel" name="logo_label">
+                <property name="geometry">
+                    <rect>
+                        <x>245</x>
+                        <y>60</y>
+                        <width>500</width>
+                        <height>121</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string/>
+                </property>
+                <property name="pixmap">
+                    <pixmap>../../assets/vedanya_logo.png</pixmap>
+                </property>
+                <property name="scaledContents">
+                    <bool>false</bool>
+                </property>
+                <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                </property>
+            </widget>
+            <widget class="QLabel" name="label">
+                <property name="geometry">
+                    <rect>
+                        <x>250</x>
+                        <y>180</y>
+                        <width>500</width>
+                        <height>41</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <family>Yu Gothic Light</family>
+                        <pointsize>16</pointsize>
+                    </font>
+                </property>
+                <property name="text">
+                    <string>FINANCIAL RESOURCE MANAGEMENT</string>
+                </property>
+                <property name="alignment">
+                    <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+                </property>
+            </widget>
+        </widget>
+        <widget class="QMenuBar" name="menubar">
+            <property name="geometry">
+                <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>1000</width>
+                    <height>25</height>
+                </rect>
+            </property>
+            <widget class="QMenu" name="menuVedanya">
+                <property name="title">
+                    <string>Vedanya</string>
+                </property>
+                <addaction name="actionSupport"/>
+                <addaction name="actionAbout"/>
+                <addaction name="actionExit"/>
+            </widget>
+            <addaction name="menuVedanya"/>
+        </widget>
+        <widget class="QStatusBar" name="statusbar"/>
+        <action name="actionExit">
+            <property name="text">
+                <string>Exit</string>
+            </property>
+        </action>
+        <action name="actionAbout">
+            <property name="text">
+                <string>About</string>
+            </property>
+        </action>
+        <action name="actionSupport">
+            <property name="text">
+                <string>Support</string>
+            </property>
+        </action>
+    </widget>
+    <resources/>
+    <connections/>
+</ui>

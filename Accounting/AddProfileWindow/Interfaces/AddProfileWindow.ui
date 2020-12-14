@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>AddProfileWindow</class>
+    <widget class="QMainWindow" name="AddProfileWindow">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>1000</width>
+                <height>492</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>MainWindow</string>
+        </property>
+        <property name="styleSheet">
+            <string notr="true">#AddProfileWindow{
+                background-color: white;
+                }
+            </string>
+        </property>
+        <widget class="QWidget" name="centralwidget">
+            <widget class="Line" name="line">
+                <property name="geometry">
+                    <rect>
+                        <x>490</x>
+                        <y>20</y>
+                        <width>20</width>
+                        <height>440</height>
+                    </rect>
+                </property>
+                <property name="styleSheet">
+                    <string notr="true">#line{
+
+                        }
+                    </string>
+                </property>
+                <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                </property>
+            </widget>
+            <widget class="QFrame" name="frame">
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>10</y>
+                        <width>431</width>
+                        <height>101</height>
+                    </rect>
+                </property>
+                <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="static_8">
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>10</y>
+                            <width>75</width>
+                            <height>75</height>
+                        </rect>
+                    </property>
+                    <property name="styleSheet">
+                        <string notr="true">border-style: solid;
+                            border-radius:500px;
+                            max-width:75px;
+                            max-height:75px;
+                            min-width:75px;
+                            min-height:75px;
+                        </string>
+                    </property>
+                    <property name="text">
+                        <string/>
+                    </property>
+                    <property name="pixmap">
+                        <pixmap>../../assets/client_img.png</pixmap>
+                    </property>
+                    <property name="scaledContents">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QLabel" name="static_7">
+                    <property name="geometry">
+                        <rect>
+                            <x>100</x>
+                            <y>20</y>
+                            <width>301</width>
+                            <height>51</height>
+                        </rect>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <family>Yu Gothic UI Light</family>
+                            <pointsize>36</pointsize>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>ADD CLIENT</string>
+                    </property>
+                </widget>
+            </widget>
+            <widget class="QFrame" name="frame_2">
+                <property name="geometry">
+                    <rect>
+                        <x>520</x>
+                        <y>10</y>
+                        <width>431</width>
+                        <height>101</height>
+                    </rect>
+                </property>
+                <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="static_6">
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>10</y>
+                            <width>75</width>
+                            <height>75</height>
+                        </rect>
+                    </property>
+                    <property name="styleSheet">
+                        <string notr="true">border-style: solid;
+                            border-radius:500px;
+                            max-width:75px;
+                            max-height:75px;
+                            min-width:75px;
+                            min-height:75px;
+                        </string>
+                    </property>
+                    <property name="text">
+                        <string/>
+                    </property>
+                    <property name="pixmap">
+                        <pixmap>../../assets/sr_img.png</pixmap>
+                    </property>
+                    <property name="scaledContents">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QLabel" name="static_5">
+                    <property name="geometry">
+                        <rect>
+                            <x>100</x>
+                            <y>20</y>
+                            <width>301</width>
+                            <height>51</height>
+                        </rect>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <family>Yu Gothic UI Light</family>
+                            <pointsize>36</pointsize>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>ADD SR</string>
+                    </property>
+                </widget>
+            </widget>
+            <widget class="QPushButton" name="submitNewClientBtn">
+                <property name="geometry">
+                    <rect>
+                        <x>410</x>
+                        <y>400</y>
+                        <width>70</width>
+                        <height>70</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <pointsize>10</pointsize>
+                    </font>
+                </property>
+                <property name="styleSheet">
+                    <string notr="true">border-style: solid;
+                        border-radius:500px;
+                        max-width:70px;
+                        max-height:70px;
+                        min-width:70px;
+                        min-height:70px;
+                    </string>
+                </property>
+                <property name="text">
+                    <string/>
+                </property>
+                <property name="icon">
+                    <iconset>
+                        <normaloff>../../assets/submit.png</normaloff>../../assets/submit.png
+                    </iconset>
+                </property>
+                <property name="iconSize">
+                    <size>
+                        <width>70</width>
+                        <height>70</height>
+                    </size>
+                </property>
+            </widget>
+            <widget class="QPushButton" name="submitNewSRBtn">
+                <property name="geometry">
+                    <rect>
+                        <x>910</x>
+                        <y>400</y>
+                        <width>70</width>
+                        <height>70</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <pointsize>10</pointsize>
+                    </font>
+                </property>
+                <property name="styleSheet">
+                    <string notr="true">border-style: solid;
+                        border-radius:500px;
+                        max-width:70px;
+                        max-height:70px;
+                        min-width:70px;
+                        min-height:70px;
+                    </string>
+                </property>
+                <property name="text">
+                    <string/>
+                </property>
+                <property name="icon">
+                    <iconset>
+                        <normaloff>../../assets/submit.png</normaloff>../../assets/submit.png
+                    </iconset>
+                </property>
+                <property name="iconSize">
+                    <size>
+                        <width>70</width>
+                        <height>70</height>
+                    </size>
+                </property>
+            </widget>
+            <widget class="QLabel" name="static_11">
+                <property name="geometry">
+                    <rect>
+                        <x>12</x>
+                        <y>267</y>
+                        <width>90</width>
+                        <height>30</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <family>Yu Gothic UI Light</family>
+                        <pointsize>10</pointsize>
+                    </font>
+                </property>
+                <property name="text">
+                    <string>STATE:</string>
+                </property>
+            </widget>
+            <widget class="QLabel" name="static_9">
+                <property name="geometry">
+                    <rect>
+                        <x>12</x>
+                        <y>137</y>
+                        <width>101</width>
+                        <height>30</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <family>Yu Gothic UI Light</family>
+                        <pointsize>10</pointsize>
+                    </font>
+                </property>
+                <property name="text">
+                    <string>CLIENT NAME:</string>
+                </property>
+            </widget>
+            <widget class="QLabel" name="static_10">
+                <property name="geometry">
+                    <rect>
+                        <x>12</x>
+                        <y>237</y>
+                        <width>90</width>
+                        <height>30</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <family>Yu Gothic UI Light</family>
+                        <pointsize>10</pointsize>
+                    </font>
+                </property>
+                <property name="text">
+                    <string>SR NAME:</string>
+                </property>
+            </widget>
+            <widget class="QLabel" name="static_12">
+                <property name="geometry">
+                    <rect>
+                        <x>12</x>
+                        <y>297</y>
+                        <width>90</width>
+                        <height>30</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <family>Yu Gothic UI Light</family>
+                        <pointsize>10</pointsize>
+                    </font>
+                </property>
+                <property name="text">
+                    <string>CITY:</string>
+                </property>
+            </widget>
+            <widget class="QPlainTextEdit" name="NewClientName">
+                <property name="geometry">
+                    <rect>
+                        <x>130</x>
+                        <y>140</y>
+                        <width>311</width>
+                        <height>26</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <family>Yu Gothic UI</family>
+                        <pointsize>8</pointsize>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                    </font>
+                </property>
+            </widget>
+            <widget class="QComboBox" name="NewClientSRNameSelection">
+                <property name="geometry">
+                    <rect>
+                        <x>130</x>
+                        <y>233</y>
+                        <width>311</width>
+                        <height>25</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <family>Yu Gothic UI</family>
+                        <pointsize>8</pointsize>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                    </font>
+                </property>
+            </widget>
+            <widget class="QComboBox" name="NewClientStateSelection">
+                <property name="geometry">
+                    <rect>
+                        <x>130</x>
+                        <y>263</y>
+                        <width>311</width>
+                        <height>25</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <family>Yu Gothic UI</family>
+                        <pointsize>8</pointsize>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                    </font>
+                </property>
+            </widget>
+            <widget class="QPlainTextEdit" name="NewClientCity">
+                <property name="geometry">
+                    <rect>
+                        <x>130</x>
+                        <y>293</y>
+                        <width>311</width>
+                        <height>26</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <family>Yu Gothic UI</family>
+                        <pointsize>8</pointsize>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                    </font>
+                </property>
+            </widget>
+            <widget class="QComboBox" name="NewSRState">
+                <property name="geometry">
+                    <rect>
+                        <x>630</x>
+                        <y>193</y>
+                        <width>311</width>
+                        <height>25</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <family>Yu Gothic UI</family>
+                        <pointsize>8</pointsize>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                    </font>
+                </property>
+            </widget>
+            <widget class="QLabel" name="static_2">
+                <property name="geometry">
+                    <rect>
+                        <x>520</x>
+                        <y>220</y>
+                        <width>90</width>
+                        <height>30</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <family>Yu Gothic UI Light</family>
+                        <pointsize>10</pointsize>
+                    </font>
+                </property>
+                <property name="text">
+                    <string>CITY:</string>
+                </property>
+            </widget>
+            <widget class="QLabel" name="static_4">
+                <property name="geometry">
+                    <rect>
+                        <x>520</x>
+                        <y>137</y>
+                        <width>90</width>
+                        <height>30</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <family>Yu Gothic UI Light</family>
+                        <pointsize>10</pointsize>
+                    </font>
+                </property>
+                <property name="text">
+                    <string>SR NAME:</string>
+                </property>
+            </widget>
+            <widget class="QLabel" name="static_3">
+                <property name="geometry">
+                    <rect>
+                        <x>520</x>
+                        <y>190</y>
+                        <width>90</width>
+                        <height>30</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <family>Yu Gothic UI Light</family>
+                        <pointsize>10</pointsize>
+                    </font>
+                </property>
+                <property name="text">
+                    <string>STATE:</string>
+                </property>
+            </widget>
+            <widget class="QPlainTextEdit" name="NewSRCity">
+                <property name="geometry">
+                    <rect>
+                        <x>630</x>
+                        <y>223</y>
+                        <width>311</width>
+                        <height>26</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <family>Yu Gothic UI</family>
+                        <pointsize>8</pointsize>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                    </font>
+                </property>
+            </widget>
+            <widget class="QPlainTextEdit" name="NewSRName">
+                <property name="geometry">
+                    <rect>
+                        <x>630</x>
+                        <y>140</y>
+                        <width>311</width>
+                        <height>26</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <family>Yu Gothic UI</family>
+                        <pointsize>8</pointsize>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                    </font>
+                </property>
+            </widget>
+            <widget class="QPlainTextEdit" name="NewClientNumber">
+                <property name="geometry">
+                    <rect>
+                        <x>130</x>
+                        <y>193</y>
+                        <width>311</width>
+                        <height>26</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <family>Yu Gothic UI</family>
+                        <pointsize>8</pointsize>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                    </font>
+                </property>
+            </widget>
+            <widget class="QLabel" name="static_14">
+                <property name="geometry">
+                    <rect>
+                        <x>12</x>
+                        <y>197</y>
+                        <width>121</width>
+                        <height>30</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <family>Yu Gothic UI Light</family>
+                        <pointsize>10</pointsize>
+                    </font>
+                </property>
+                <property name="text">
+                    <string>CLIENT NUMBER:</string>
+                </property>
+            </widget>
+        </widget>
+        <widget class="QStatusBar" name="statusbar"/>
+    </widget>
+    <resources/>
+    <connections/>
+</ui>

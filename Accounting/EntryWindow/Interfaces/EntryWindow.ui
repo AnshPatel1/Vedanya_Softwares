@@ -1,0 +1,1105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>EntryWindow</class>
+    <widget class="QMainWindow" name="EntryWindow">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>1110</width>
+                <height>710</height>
+            </rect>
+        </property>
+        <property name="minimumSize">
+            <size>
+                <width>1110</width>
+                <height>710</height>
+            </size>
+        </property>
+        <property name="maximumSize">
+            <size>
+                <width>1200</width>
+                <height>710</height>
+            </size>
+        </property>
+        <property name="windowTitle">
+            <string>MainWindow</string>
+        </property>
+        <property name="styleSheet">
+            <string notr="true">#EntryWindow{background-color: rgb(225, 255, 245);}</string>
+        </property>
+        <widget class="QWidget" name="centralwidget">
+            <widget class="QGroupBox" name="clientInformationBox">
+                <property name="enabled">
+                    <bool>true</bool>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>420</y>
+                        <width>1091</width>
+                        <height>261</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <family>Yu Gothic UI Light</family>
+                        <pointsize>10</pointsize>
+                    </font>
+                </property>
+                <property name="styleSheet">
+                    <string notr="true">#clientInformationBox{
+                        background-color: white;
+                        border-radius: 20px;
+                        }
+                    </string>
+                </property>
+                <property name="title">
+                    <string>CLIENT INFORMATION</string>
+                </property>
+                <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                </property>
+                <widget class="QLabel" name="info_sr_id">
+                    <property name="geometry">
+                        <rect>
+                            <x>30</x>
+                            <y>130</y>
+                            <width>90</width>
+                            <height>30</height>
+                        </rect>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <family>Yu Gothic UI Light</family>
+                            <pointsize>10</pointsize>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>SR ID:</string>
+                    </property>
+                </widget>
+                <widget class="QLabel" name="info_client_state_code">
+                    <property name="geometry">
+                        <rect>
+                            <x>30</x>
+                            <y>190</y>
+                            <width>90</width>
+                            <height>30</height>
+                        </rect>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <family>Yu Gothic UI Light</family>
+                            <pointsize>10</pointsize>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>STATE CODE:</string>
+                    </property>
+                </widget>
+                <widget class="QLabel" name="info_client_id">
+                    <property name="geometry">
+                        <rect>
+                            <x>30</x>
+                            <y>70</y>
+                            <width>90</width>
+                            <height>30</height>
+                        </rect>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <family>Yu Gothic UI Light</family>
+                            <pointsize>10</pointsize>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>CLIENT ID:</string>
+                    </property>
+                </widget>
+                <widget class="QLabel" name="info_client_name">
+                    <property name="geometry">
+                        <rect>
+                            <x>30</x>
+                            <y>40</y>
+                            <width>101</width>
+                            <height>30</height>
+                        </rect>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <family>Yu Gothic UI Light</family>
+                            <pointsize>10</pointsize>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>CLIENT NAME:</string>
+                    </property>
+                </widget>
+                <widget class="QLabel" name="info_client_city">
+                    <property name="geometry">
+                        <rect>
+                            <x>30</x>
+                            <y>220</y>
+                            <width>90</width>
+                            <height>30</height>
+                        </rect>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <family>Yu Gothic UI Light</family>
+                            <pointsize>10</pointsize>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>CITY:</string>
+                    </property>
+                </widget>
+                <widget class="QLabel" name="info_client_state">
+                    <property name="geometry">
+                        <rect>
+                            <x>30</x>
+                            <y>160</y>
+                            <width>90</width>
+                            <height>30</height>
+                        </rect>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <family>Yu Gothic UI Light</family>
+                            <pointsize>10</pointsize>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>STATE:</string>
+                    </property>
+                </widget>
+                <widget class="QLabel" name="info_sr_name">
+                    <property name="geometry">
+                        <rect>
+                            <x>30</x>
+                            <y>100</y>
+                            <width>90</width>
+                            <height>30</height>
+                        </rect>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <family>Yu Gothic UI Light</family>
+                            <pointsize>10</pointsize>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>SR NAME:</string>
+                    </property>
+                </widget>
+                <widget class="Line" name="line_2">
+                    <property name="geometry">
+                        <rect>
+                            <x>360</x>
+                            <y>14</y>
+                            <width>421</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <family>Yu Gothic UI Light</family>
+                            <pointsize>6</pointsize>
+                            <weight>50</weight>
+                            <bold>false</bold>
+                        </font>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>QFrame::Sunken</enum>
+                    </property>
+                    <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                    </property>
+                </widget>
+                <widget class="QTextEdit" name="info_client_name_value">
+                    <property name="geometry">
+                        <rect>
+                            <x>230</x>
+                            <y>40</y>
+                            <width>531</width>
+                            <height>30</height>
+                        </rect>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <family>Yu Gothic UI</family>
+                            <pointsize>10</pointsize>
+                            <weight>50</weight>
+                            <bold>false</bold>
+                        </font>
+                    </property>
+                    <property name="styleSheet">
+                        <string notr="true">QTextEdit {
+                            border:0;
+                            }
+                        </string>
+                    </property>
+                    <property name="readOnly">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QTextEdit" name="info_sr_id_value">
+                    <property name="geometry">
+                        <rect>
+                            <x>230</x>
+                            <y>130</y>
+                            <width>531</width>
+                            <height>30</height>
+                        </rect>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <family>Yu Gothic UI</family>
+                            <pointsize>10</pointsize>
+                            <weight>50</weight>
+                            <bold>false</bold>
+                        </font>
+                    </property>
+                    <property name="styleSheet">
+                        <string notr="true">QTextEdit {
+                            border:0;
+                            }
+                        </string>
+                    </property>
+                    <property name="readOnly">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QTextEdit" name="info_client_state_name_value">
+                    <property name="geometry">
+                        <rect>
+                            <x>230</x>
+                            <y>160</y>
+                            <width>531</width>
+                            <height>30</height>
+                        </rect>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <family>Yu Gothic UI</family>
+                            <pointsize>10</pointsize>
+                            <weight>50</weight>
+                            <bold>false</bold>
+                        </font>
+                    </property>
+                    <property name="styleSheet">
+                        <string notr="true">QTextEdit {
+                            border:0;
+                            }
+                        </string>
+                    </property>
+                    <property name="readOnly">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QTextEdit" name="info_client_state_code_value">
+                    <property name="geometry">
+                        <rect>
+                            <x>230</x>
+                            <y>190</y>
+                            <width>531</width>
+                            <height>30</height>
+                        </rect>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <family>Yu Gothic UI</family>
+                            <pointsize>10</pointsize>
+                            <weight>50</weight>
+                            <bold>false</bold>
+                        </font>
+                    </property>
+                    <property name="styleSheet">
+                        <string notr="true">QTextEdit {
+                            border:0;
+                            }
+                        </string>
+                    </property>
+                    <property name="readOnly">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QTextEdit" name="info_sr_name_value">
+                    <property name="geometry">
+                        <rect>
+                            <x>230</x>
+                            <y>100</y>
+                            <width>531</width>
+                            <height>30</height>
+                        </rect>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <family>Yu Gothic UI</family>
+                            <pointsize>10</pointsize>
+                            <weight>50</weight>
+                            <bold>false</bold>
+                        </font>
+                    </property>
+                    <property name="styleSheet">
+                        <string notr="true">QTextEdit {
+                            border:0;
+                            }
+                        </string>
+                    </property>
+                    <property name="readOnly">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QTextEdit" name="info_client_id_value">
+                    <property name="geometry">
+                        <rect>
+                            <x>230</x>
+                            <y>70</y>
+                            <width>531</width>
+                            <height>30</height>
+                        </rect>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <family>Yu Gothic UI</family>
+                            <pointsize>10</pointsize>
+                            <weight>50</weight>
+                            <bold>false</bold>
+                        </font>
+                    </property>
+                    <property name="styleSheet">
+                        <string notr="true">QTextEdit {
+                            border:0;
+                            }
+                        </string>
+                    </property>
+                    <property name="readOnly">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QTextEdit" name="info_client_city_value">
+                    <property name="geometry">
+                        <rect>
+                            <x>230</x>
+                            <y>220</y>
+                            <width>531</width>
+                            <height>30</height>
+                        </rect>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <family>Yu Gothic UI</family>
+                            <pointsize>10</pointsize>
+                            <weight>50</weight>
+                            <bold>false</bold>
+                        </font>
+                    </property>
+                    <property name="styleSheet">
+                        <string notr="true">QTextEdit {
+                            border:0;
+                            }
+                        </string>
+                    </property>
+                    <property name="readOnly">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+            </widget>
+            <widget class="QGroupBox" name="EntryBox">
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>10</y>
+                        <width>1091</width>
+                        <height>401</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <family>Yu Gothic UI Light</family>
+                        <pointsize>10</pointsize>
+                    </font>
+                </property>
+                <property name="cursor">
+                    <cursorShape>ArrowCursor</cursorShape>
+                </property>
+                <property name="styleSheet">
+                    <string notr="true">#EntryBox {
+                        background-color: white;
+                        border-radius: 20px;
+                        }
+                    </string>
+                </property>
+                <property name="title">
+                    <string>SEARCH AREA</string>
+                </property>
+                <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                </property>
+                <widget class="QLabel" name="label">
+                    <property name="geometry">
+                        <rect>
+                            <x>30</x>
+                            <y>60</y>
+                            <width>191</width>
+                            <height>25</height>
+                        </rect>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <family>Yu Gothic UI Light</family>
+                            <pointsize>10</pointsize>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>EXISTING CLIENT NAME:</string>
+                    </property>
+                </widget>
+                <widget class="QComboBox" name="client_selection">
+                    <property name="geometry">
+                        <rect>
+                            <x>230</x>
+                            <y>61</y>
+                            <width>251</width>
+                            <height>23</height>
+                        </rect>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <pointsize>10</pointsize>
+                        </font>
+                    </property>
+                    <property name="cursor">
+                        <cursorShape>PointingHandCursor</cursorShape>
+                    </property>
+                </widget>
+                <widget class="QPushButton" name="submitEntryButton">
+                    <property name="geometry">
+                        <rect>
+                            <x>945</x>
+                            <y>320</y>
+                            <width>70</width>
+                            <height>70</height>
+                        </rect>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <pointsize>10</pointsize>
+                        </font>
+                    </property>
+                    <property name="cursor">
+                        <cursorShape>PointingHandCursor</cursorShape>
+                    </property>
+                    <property name="styleSheet">
+                        <string notr="true">border-style: solid;
+                            border-radius:500px;
+                            max-width:70px;
+                            max-height:70px;
+                            min-width:70px;
+                            min-height:70px;
+                        </string>
+                    </property>
+                    <property name="text">
+                        <string/>
+                    </property>
+                    <property name="icon">
+                        <iconset>
+                            <normaloff>../../assets/submit.png</normaloff>../../assets/submit.png
+                        </iconset>
+                    </property>
+                    <property name="iconSize">
+                        <size>
+                            <width>70</width>
+                            <height>70</height>
+                        </size>
+                    </property>
+                </widget>
+                <widget class="QLabel" name="label_2">
+                    <property name="geometry">
+                        <rect>
+                            <x>30</x>
+                            <y>88</y>
+                            <width>191</width>
+                            <height>25</height>
+                        </rect>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <family>Yu Gothic UI Light</family>
+                            <pointsize>10</pointsize>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>BANK NAME:</string>
+                    </property>
+                </widget>
+                <widget class="QComboBox" name="bank_selection">
+                    <property name="geometry">
+                        <rect>
+                            <x>230</x>
+                            <y>91</y>
+                            <width>251</width>
+                            <height>23</height>
+                        </rect>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <pointsize>10</pointsize>
+                        </font>
+                    </property>
+                    <property name="cursor">
+                        <cursorShape>PointingHandCursor</cursorShape>
+                    </property>
+                </widget>
+                <widget class="Line" name="line_3">
+                    <property name="geometry">
+                        <rect>
+                            <x>360</x>
+                            <y>14</y>
+                            <width>421</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <family>Yu Gothic UI Light</family>
+                            <pointsize>6</pointsize>
+                            <weight>50</weight>
+                            <bold>false</bold>
+                        </font>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>QFrame::Sunken</enum>
+                    </property>
+                    <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                    </property>
+                </widget>
+                <widget class="QLabel" name="label_3">
+                    <property name="geometry">
+                        <rect>
+                            <x>30</x>
+                            <y>170</y>
+                            <width>191</width>
+                            <height>16</height>
+                        </rect>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <family>Yu Gothic UI Light</family>
+                            <pointsize>10</pointsize>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>DATE:</string>
+                    </property>
+                </widget>
+                <widget class="QDateEdit" name="currentDateEdit">
+                    <property name="geometry">
+                        <rect>
+                            <x>230</x>
+                            <y>210</y>
+                            <width>161</width>
+                            <height>22</height>
+                        </rect>
+                    </property>
+                    <property name="readOnly">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QPushButton" name="add_profile_btn">
+                    <property name="geometry">
+                        <rect>
+                            <x>934</x>
+                            <y>61</y>
+                            <width>100</width>
+                            <height>100</height>
+                        </rect>
+                    </property>
+                    <property name="cursor">
+                        <cursorShape>PointingHandCursor</cursorShape>
+                    </property>
+                    <property name="styleSheet">
+                        <string notr="true">border-style: solid;
+                            /*border-radius:500px;*/
+                            max-width:100px;
+                            max-height:100px;
+                            min-width:100px;
+                            min-height:100px;
+                        </string>
+                    </property>
+                    <property name="text">
+                        <string/>
+                    </property>
+                    <property name="icon">
+                        <iconset>
+                            <normaloff>assets/add_profile.png</normaloff>assets/add_profile.png
+                        </iconset>
+                    </property>
+                    <property name="iconSize">
+                        <size>
+                            <width>100</width>
+                            <height>100</height>
+                        </size>
+                    </property>
+                </widget>
+                <widget class="QLabel" name="add_profile_label">
+                    <property name="geometry">
+                        <rect>
+                            <x>930</x>
+                            <y>161</y>
+                            <width>100</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <family>Yu Gothic UI Light</family>
+                            <pointsize>9</pointsize>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>ADD PROFILE</string>
+                    </property>
+                    <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                    </property>
+                </widget>
+                <widget class="QLabel" name="label_5">
+                    <property name="geometry">
+                        <rect>
+                            <x>510</x>
+                            <y>161</y>
+                            <width>41</width>
+                            <height>31</height>
+                        </rect>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <family>Yu Gothic UI</family>
+                            <pointsize>13</pointsize>
+                            <weight>75</weight>
+                            <bold>true</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>OR</string>
+                    </property>
+                </widget>
+                <widget class="QRadioButton" name="current_date_radio_btn">
+                    <property name="geometry">
+                        <rect>
+                            <x>230</x>
+                            <y>170</y>
+                            <width>121</width>
+                            <height>18</height>
+                        </rect>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <family>Yu Gothic UI Light</family>
+                            <pointsize>10</pointsize>
+                        </font>
+                    </property>
+                    <property name="cursor">
+                        <cursorShape>PointingHandCursor</cursorShape>
+                    </property>
+                    <property name="text">
+                        <string>CURRENT DATE</string>
+                    </property>
+                </widget>
+                <widget class="QRadioButton" name="manual_date_radio_btn">
+                    <property name="geometry">
+                        <rect>
+                            <x>610</x>
+                            <y>170</y>
+                            <width>121</width>
+                            <height>18</height>
+                        </rect>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <family>Yu Gothic UI Light</family>
+                            <pointsize>10</pointsize>
+                        </font>
+                    </property>
+                    <property name="cursor">
+                        <cursorShape>PointingHandCursor</cursorShape>
+                    </property>
+                    <property name="text">
+                        <string>MANUAL DATE</string>
+                    </property>
+                </widget>
+                <widget class="QDateEdit" name="manuaDateEdit">
+                    <property name="geometry">
+                        <rect>
+                            <x>610</x>
+                            <y>210</y>
+                            <width>161</width>
+                            <height>22</height>
+                        </rect>
+                    </property>
+                    <property name="readOnly">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QLabel" name="label_12">
+                    <property name="geometry">
+                        <rect>
+                            <x>30</x>
+                            <y>116</y>
+                            <width>191</width>
+                            <height>25</height>
+                        </rect>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <family>Yu Gothic UI Light</family>
+                            <pointsize>10</pointsize>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>AMOUNT:</string>
+                    </property>
+                </widget>
+                <widget class="QPlainTextEdit" name="plainTextEdit">
+                    <property name="geometry">
+                        <rect>
+                            <x>230</x>
+                            <y>120</y>
+                            <width>251</width>
+                            <height>25</height>
+                        </rect>
+                    </property>
+                    <property name="cursor" stdset="0">
+                        <cursorShape>IBeamCursor</cursorShape>
+                    </property>
+                </widget>
+                <widget class="QFrame" name="current_date_info_frame">
+                    <property name="geometry">
+                        <rect>
+                            <x>230</x>
+                            <y>251</y>
+                            <width>261</width>
+                            <height>101</height>
+                        </rect>
+                    </property>
+                    <property name="autoFillBackground">
+                        <bool>false</bool>
+                    </property>
+                    <property name="styleSheet">
+                        <string notr="true">#current_date_info_frame{
+                            background-color: rgb(255, 255, 176);
+                            }
+                        </string>
+                    </property>
+                    <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                    </property>
+                    <widget class="QLabel" name="warning1_2">
+                        <property name="geometry">
+                            <rect>
+                                <x>18</x>
+                                <y>38</y>
+                                <width>241</width>
+                                <height>25</height>
+                            </rect>
+                        </property>
+                        <property name="font">
+                            <font>
+                                <family>Yu Gothic UI Light</family>
+                                <pointsize>10</pointsize>
+                            </font>
+                        </property>
+                        <property name="text">
+                            <string>THIS WILL AUTOMATICALLY SELECT</string>
+                        </property>
+                    </widget>
+                    <widget class="QLabel" name="warning1_3">
+                        <property name="geometry">
+                            <rect>
+                                <x>18</x>
+                                <y>58</y>
+                                <width>241</width>
+                                <height>25</height>
+                            </rect>
+                        </property>
+                        <property name="font">
+                            <font>
+                                <family>Yu Gothic UI Light</family>
+                                <pointsize>10</pointsize>
+                            </font>
+                        </property>
+                        <property name="text">
+                            <string>THE CURRENT DATE.</string>
+                        </property>
+                    </widget>
+                    <widget class="QLabel" name="warning1_1">
+                        <property name="geometry">
+                            <rect>
+                                <x>18</x>
+                                <y>10</y>
+                                <width>191</width>
+                                <height>25</height>
+                            </rect>
+                        </property>
+                        <property name="font">
+                            <font>
+                                <family>Yu Gothic UI</family>
+                                <pointsize>10</pointsize>
+                                <weight>75</weight>
+                                <bold>true</bold>
+                            </font>
+                        </property>
+                        <property name="text">
+                            <string>WARNING:</string>
+                        </property>
+                    </widget>
+                </widget>
+                <widget class="QFrame" name="manual_date_info_frame">
+                    <property name="geometry">
+                        <rect>
+                            <x>610</x>
+                            <y>250</y>
+                            <width>261</width>
+                            <height>101</height>
+                        </rect>
+                    </property>
+                    <property name="autoFillBackground">
+                        <bool>false</bool>
+                    </property>
+                    <property name="styleSheet">
+                        <string notr="true">#manual_date_info_frame{
+                            background-color: rgb(255, 255, 176);
+                            }
+                        </string>
+                    </property>
+                    <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                    </property>
+                    <widget class="QLabel" name="warning2_2">
+                        <property name="geometry">
+                            <rect>
+                                <x>18</x>
+                                <y>38</y>
+                                <width>241</width>
+                                <height>25</height>
+                            </rect>
+                        </property>
+                        <property name="font">
+                            <font>
+                                <family>Yu Gothic UI Light</family>
+                                <pointsize>10</pointsize>
+                            </font>
+                        </property>
+                        <property name="text">
+                            <string>THIS WILL LET YOU SELECT</string>
+                        </property>
+                    </widget>
+                    <widget class="QLabel" name="warning2_3">
+                        <property name="geometry">
+                            <rect>
+                                <x>18</x>
+                                <y>58</y>
+                                <width>241</width>
+                                <height>25</height>
+                            </rect>
+                        </property>
+                        <property name="font">
+                            <font>
+                                <family>Yu Gothic UI Light</family>
+                                <pointsize>10</pointsize>
+                            </font>
+                        </property>
+                        <property name="text">
+                            <string>THE DATE MANUALLY</string>
+                        </property>
+                    </widget>
+                    <widget class="QLabel" name="warning2_1">
+                        <property name="geometry">
+                            <rect>
+                                <x>18</x>
+                                <y>10</y>
+                                <width>191</width>
+                                <height>25</height>
+                            </rect>
+                        </property>
+                        <property name="font">
+                            <font>
+                                <family>Yu Gothic UI</family>
+                                <pointsize>10</pointsize>
+                                <weight>75</weight>
+                                <bold>true</bold>
+                            </font>
+                        </property>
+                        <property name="text">
+                            <string>WARNING:</string>
+                        </property>
+                    </widget>
+                </widget>
+                <widget class="QPushButton" name="calendarPopUpButton">
+                    <property name="geometry">
+                        <rect>
+                            <x>780</x>
+                            <y>208</y>
+                            <width>25</width>
+                            <height>25</height>
+                        </rect>
+                    </property>
+                    <property name="styleSheet">
+                        <string notr="true">#calendarPopUpButton{
+                            background-color: white
+                            }
+                        </string>
+                    </property>
+                    <property name="text">
+                        <string/>
+                    </property>
+                    <property name="icon">
+                        <iconset>
+                            <normaloff>assets/calendar.png</normaloff>assets/calendar.png
+                        </iconset>
+                    </property>
+                    <property name="iconSize">
+                        <size>
+                            <width>30</width>
+                            <height>30</height>
+                        </size>
+                    </property>
+                    <property name="flat">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <zorder>manual_date_info_frame</zorder>
+                <zorder>label</zorder>
+                <zorder>client_selection</zorder>
+                <zorder>submitEntryButton</zorder>
+                <zorder>label_2</zorder>
+                <zorder>bank_selection</zorder>
+                <zorder>line_3</zorder>
+                <zorder>label_3</zorder>
+                <zorder>currentDateEdit</zorder>
+                <zorder>add_profile_btn</zorder>
+                <zorder>add_profile_label</zorder>
+                <zorder>label_5</zorder>
+                <zorder>current_date_radio_btn</zorder>
+                <zorder>manual_date_radio_btn</zorder>
+                <zorder>manuaDateEdit</zorder>
+                <zorder>label_12</zorder>
+                <zorder>plainTextEdit</zorder>
+                <zorder>current_date_info_frame</zorder>
+                <zorder>calendarPopUpButton</zorder>
+            </widget>
+            <widget class="QFrame" name="calendarFrame">
+                <property name="enabled">
+                    <bool>true</bool>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>620</x>
+                        <y>260</y>
+                        <width>381</width>
+                        <height>231</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <family>Yu Gothic UI Light</family>
+                        <pointsize>10</pointsize>
+                    </font>
+                </property>
+                <property name="cursor">
+                    <cursorShape>ArrowCursor</cursorShape>
+                </property>
+                <property name="styleSheet">
+                    <string notr="true">#calendarFrame{
+                        background-color:rgb(230,230,230);
+                        border-raduis: 50px;
+                        }
+                    </string>
+                </property>
+                <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QCalendarWidget" name="calendarWidget">
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>10</y>
+                            <width>361</width>
+                            <height>183</height>
+                        </rect>
+                    </property>
+                    <property name="cursor">
+                        <cursorShape>PointingHandCursor</cursorShape>
+                    </property>
+                    <property name="styleSheet">
+                        <string notr="true">class MyDateEdit : QDateEdit
+                            {
+                            Q_OBJECT
+
+                            protected:
+                            void mouseEvent(QEvent *event) {
+                            this.calendarWidget().show();
+                            }
+                            };
+                        </string>
+                    </property>
+                    <property name="navigationBarVisible">
+                        <bool>true</bool>
+                    </property>
+                    <property name="dateEditEnabled">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QPushButton" name="confirm_calendar_selection_btn">
+                    <property name="geometry">
+                        <rect>
+                            <x>290</x>
+                            <y>200</y>
+                            <width>85</width>
+                            <height>26</height>
+                        </rect>
+                    </property>
+                    <property name="autoFillBackground">
+                        <bool>false</bool>
+                    </property>
+                    <property name="styleSheet">
+                        <string notr="true">#confirm_calendar_selection_btn{
+                            background-color: white;
+                            }
+                        </string>
+                    </property>
+                    <property name="text">
+                        <string>OK</string>
+                    </property>
+                    <property name="autoDefault">
+                        <bool>false</bool>
+                    </property>
+                    <property name="default">
+                        <bool>false</bool>
+                    </property>
+                    <property name="flat">
+                        <bool>false</bool>
+                    </property>
+                </widget>
+                <zorder>confirm_calendar_selection_btn</zorder>
+                <zorder>calendarWidget</zorder>
+            </widget>
+        </widget>
+        <widget class="QStatusBar" name="statusbar"/>
+    </widget>
+    <resources/>
+    <connections/>
+</ui>

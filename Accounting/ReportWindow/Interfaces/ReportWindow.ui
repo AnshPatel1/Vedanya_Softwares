@@ -1,0 +1,1099 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>ReportsWindow</class>
+    <widget class="QMainWindow" name="ReportsWindow">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>844</width>
+                <height>823</height>
+            </rect>
+        </property>
+        <property name="font">
+            <font>
+                <family>Yu Gothic Light</family>
+            </font>
+        </property>
+        <property name="windowTitle">
+            <string>MainWindow</string>
+        </property>
+        <property name="styleSheet">
+            <string notr="true">#ReportsWindow{
+                background-color: white
+                }
+
+                #sr_llist_area{
+                background-color: white
+                }
+            </string>
+        </property>
+        <widget class="QWidget" name="centralwidget">
+            <widget class="QFrame" name="frame">
+                <property name="geometry">
+                    <rect>
+                        <x>3</x>
+                        <y>10</y>
+                        <width>1161</width>
+                        <height>81</height>
+                    </rect>
+                </property>
+                <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="static_2">
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>3</y>
+                            <width>75</width>
+                            <height>75</height>
+                        </rect>
+                    </property>
+                    <property name="styleSheet">
+                        <string notr="true">border-style: solid;
+                            border-radius:500px;
+                            max-width:75px;
+                            max-height:75px;
+                            min-width:75px;
+                            min-height:75px;
+                        </string>
+                    </property>
+                    <property name="text">
+                        <string/>
+                    </property>
+                    <property name="pixmap">
+                        <pixmap>assets/report.png</pixmap>
+                    </property>
+                    <property name="scaledContents">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QLabel" name="label">
+                    <property name="geometry">
+                        <rect>
+                            <x>100</x>
+                            <y>-1</y>
+                            <width>431</width>
+                            <height>75</height>
+                        </rect>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <family>Yu Gothic UI Light</family>
+                            <pointsize>51</pointsize>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>REPORTS</string>
+                    </property>
+                </widget>
+                <widget class="Line" name="static_seperator">
+                    <property name="geometry">
+                        <rect>
+                            <x>93</x>
+                            <y>0</y>
+                            <width>1</width>
+                            <height>80</height>
+                        </rect>
+                    </property>
+                    <property name="styleSheet">
+                        <string notr="true">#static_seperator{
+                            background-color: rgb(125, 125, 125);
+                            }
+                        </string>
+                    </property>
+                    <property name="orientation">
+                        <enum>Qt::Vertical</enum>
+                    </property>
+                </widget>
+            </widget>
+            <widget class="QPushButton" name="saveReport">
+                <property name="geometry">
+                    <rect>
+                        <x>720</x>
+                        <y>700</y>
+                        <width>100</width>
+                        <height>100</height>
+                    </rect>
+                </property>
+                <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="styleSheet">
+                    <string notr="true">border-style: solid;
+                        border-radius:500px;
+                        max-width:100px;
+                        max-height:100px;
+                        min-width:100px;
+                        min-height:100px;
+                    </string>
+                </property>
+                <property name="text">
+                    <string/>
+                </property>
+                <property name="icon">
+                    <iconset>
+                        <normaloff>assets/save.png</normaloff>assets/save.png
+                    </iconset>
+                </property>
+                <property name="iconSize">
+                    <size>
+                        <width>100</width>
+                        <height>100</height>
+                    </size>
+                </property>
+            </widget>
+            <widget class="QFrame" name="toDatePickFrame">
+                <property name="enabled">
+                    <bool>true</bool>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>440</x>
+                        <y>441</y>
+                        <width>381</width>
+                        <height>231</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <family>Yu Gothic UI Light</family>
+                        <pointsize>10</pointsize>
+                    </font>
+                </property>
+                <property name="cursor">
+                    <cursorShape>ArrowCursor</cursorShape>
+                </property>
+                <property name="autoFillBackground">
+                    <bool>true</bool>
+                </property>
+                <property name="styleSheet">
+                    <string notr="true">#calendarFrame{
+                        background-color:rgb(230,230,230);
+                        border-raduis: 50px;
+                        }
+                    </string>
+                </property>
+                <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QCalendarWidget" name="toDateCalendar">
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>10</y>
+                            <width>361</width>
+                            <height>183</height>
+                        </rect>
+                    </property>
+                    <property name="cursor">
+                        <cursorShape>PointingHandCursor</cursorShape>
+                    </property>
+                    <property name="styleSheet">
+                        <string notr="true">class MyDateEdit : QDateEdit
+                            {
+                            Q_OBJECT
+
+                            protected:
+                            void mouseEvent(QEvent *event) {
+                            this.calendarWidget().show();
+                            }
+                            };
+                        </string>
+                    </property>
+                    <property name="navigationBarVisible">
+                        <bool>true</bool>
+                    </property>
+                    <property name="dateEditEnabled">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QPushButton" name="toDateCalendarConfirmBtn">
+                    <property name="geometry">
+                        <rect>
+                            <x>290</x>
+                            <y>200</y>
+                            <width>85</width>
+                            <height>26</height>
+                        </rect>
+                    </property>
+                    <property name="autoFillBackground">
+                        <bool>false</bool>
+                    </property>
+                    <property name="styleSheet">
+                        <string notr="true">#confirm_calendar_selection_btn{
+                            background-color: white;
+                            }
+                        </string>
+                    </property>
+                    <property name="text">
+                        <string>OK</string>
+                    </property>
+                    <property name="autoDefault">
+                        <bool>false</bool>
+                    </property>
+                    <property name="default">
+                        <bool>false</bool>
+                    </property>
+                    <property name="flat">
+                        <bool>false</bool>
+                    </property>
+                </widget>
+            </widget>
+            <widget class="QFrame" name="fromDatePickFrame">
+                <property name="enabled">
+                    <bool>true</bool>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>20</x>
+                        <y>441</y>
+                        <width>381</width>
+                        <height>231</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <family>Yu Gothic UI Light</family>
+                        <pointsize>10</pointsize>
+                    </font>
+                </property>
+                <property name="cursor">
+                    <cursorShape>ArrowCursor</cursorShape>
+                </property>
+                <property name="autoFillBackground">
+                    <bool>true</bool>
+                </property>
+                <property name="styleSheet">
+                    <string notr="true">#calendarFrame{
+                        background-color:rgb(230,230,230);
+                        border-raduis: 50px;
+                        }
+                    </string>
+                </property>
+                <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QCalendarWidget" name="fromDateCalendar">
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>10</y>
+                            <width>361</width>
+                            <height>183</height>
+                        </rect>
+                    </property>
+                    <property name="cursor">
+                        <cursorShape>PointingHandCursor</cursorShape>
+                    </property>
+                    <property name="styleSheet">
+                        <string notr="true">class MyDateEdit : QDateEdit
+                            {
+                            Q_OBJECT
+
+                            protected:
+                            void mouseEvent(QEvent *event) {
+                            this.calendarWidget().show();
+                            }
+                            };
+                        </string>
+                    </property>
+                    <property name="navigationBarVisible">
+                        <bool>true</bool>
+                    </property>
+                    <property name="dateEditEnabled">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QPushButton" name="fromDateCalendarConfirmBtn">
+                    <property name="geometry">
+                        <rect>
+                            <x>290</x>
+                            <y>200</y>
+                            <width>85</width>
+                            <height>26</height>
+                        </rect>
+                    </property>
+                    <property name="autoFillBackground">
+                        <bool>false</bool>
+                    </property>
+                    <property name="styleSheet">
+                        <string notr="true">#confirm_calendar_selection_btn{
+                            background-color: white;
+                            }
+                        </string>
+                    </property>
+                    <property name="text">
+                        <string>OK</string>
+                    </property>
+                    <property name="autoDefault">
+                        <bool>false</bool>
+                    </property>
+                    <property name="default">
+                        <bool>false</bool>
+                    </property>
+                    <property name="flat">
+                        <bool>false</bool>
+                    </property>
+                </widget>
+            </widget>
+            <widget class="QLabel" name="static_6">
+                <property name="geometry">
+                    <rect>
+                        <x>30</x>
+                        <y>406</y>
+                        <width>61</width>
+                        <height>25</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <family>Yu Gothic UI Light</family>
+                        <pointsize>13</pointsize>
+                    </font>
+                </property>
+                <property name="text">
+                    <string>FROM:</string>
+                </property>
+            </widget>
+            <widget class="QDateEdit" name="fromDateEdit">
+                <property name="geometry">
+                    <rect>
+                        <x>100</x>
+                        <y>410</y>
+                        <width>110</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <pointsize>10</pointsize>
+                    </font>
+                </property>
+            </widget>
+            <widget class="QLabel" name="static_5">
+                <property name="geometry">
+                    <rect>
+                        <x>440</x>
+                        <y>406</y>
+                        <width>61</width>
+                        <height>25</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <family>Yu Gothic UI Light</family>
+                        <pointsize>13</pointsize>
+                    </font>
+                </property>
+                <property name="text">
+                    <string>TO:</string>
+                </property>
+            </widget>
+            <widget class="QDateEdit" name="toDateEdit">
+                <property name="geometry">
+                    <rect>
+                        <x>510</x>
+                        <y>410</y>
+                        <width>110</width>
+                        <height>22</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <pointsize>10</pointsize>
+                    </font>
+                </property>
+            </widget>
+            <widget class="QGroupBox" name="generationOptionBox">
+                <property name="geometry">
+                    <rect>
+                        <x>490</x>
+                        <y>700</y>
+                        <width>211</width>
+                        <height>100</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <family>Yu Gothic UI</family>
+                    </font>
+                </property>
+                <property name="title">
+                    <string>GENERATION OPTIONS:</string>
+                </property>
+                <widget class="QRadioButton" name="BothRadioButton">
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>60</y>
+                            <width>111</width>
+                            <height>30</height>
+                        </rect>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <family>Yu Gothic UI Light</family>
+                            <pointsize>10</pointsize>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>PDF + EXCEL</string>
+                    </property>
+                </widget>
+                <widget class="QRadioButton" name="PDFRadioButton">
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>20</y>
+                            <width>90</width>
+                            <height>30</height>
+                        </rect>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <family>Yu Gothic UI Light</family>
+                            <pointsize>10</pointsize>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>PDF</string>
+                    </property>
+                </widget>
+                <widget class="QRadioButton" name="ExcelRadioBotton">
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>40</y>
+                            <width>90</width>
+                            <height>30</height>
+                        </rect>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <family>Yu Gothic UI Light</family>
+                            <pointsize>10</pointsize>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>EXCEL</string>
+                    </property>
+                </widget>
+            </widget>
+            <widget class="QFrame" name="sr_frame">
+                <property name="geometry">
+                    <rect>
+                        <x>440</x>
+                        <y>156</y>
+                        <width>380</width>
+                        <height>180</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <weight>50</weight>
+                        <bold>false</bold>
+                    </font>
+                </property>
+                <property name="styleSheet">
+                    <string notr="true">background-color: white;
+                    </string>
+                </property>
+                <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QScrollArea" name="sr_llist_area">
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>6</y>
+                            <width>360</width>
+                            <height>170</height>
+                        </rect>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="autoFillBackground">
+                        <bool>true</bool>
+                    </property>
+                    <property name="styleSheet">
+                        <string notr="true">
+                            QScrollArea {
+                            background:white;
+                            border: 6px black;
+                            background-color: white;
+                            }
+
+                            QScrollBar {
+                            background:white;
+                            background: white;
+                            border-radius: 5px;
+                            }
+
+                            QScrollBar:vertical {
+                            background:white;
+                            width: 13px;
+                            }
+
+                            QScrollBar::handle:vertical {
+                            width: 25px;
+                            min-height: 10px;
+                            }
+
+                            QScrollBar::add-line {
+                            border: none;
+                            background: none;
+                            }
+
+                            QScrollBar::sub-line {
+                            border: none;
+                            background: none;
+                            }
+
+
+                            QScrollBar::handle {
+                            background: rgb(58,168, 138);
+                            border-radius: 6px;
+                            }
+
+
+                            /* QScrollBar:vertical
+                            {
+                            background-color: rgb(229, 229, 229);
+                            width: 15px;
+                            margin: 15px 3px 15px 3px;
+                            border: 5px white;
+                            border-radius: 4px;
+                            }
+
+                            QScrollBar::handle:vertical
+                            {
+                            background-color: rgb(58, 168, 138);
+                            min-height: 5px;
+                            border-radius: 4px;
+                            }
+
+                            QScrollBar::sub-line:vertical
+                            {
+                            margin: 3px 0px 3px 0px;
+                            border-image: url(:/qss_icons/rc/up_arrow_disabled.png);
+                            height: 10px;
+                            width: 10px;
+                            subcontrol-position: top;
+                            subcontrol-origin: margin;
+                            }
+
+                            QScrollBar::add-line:vertical
+                            {
+                            margin: 3px 0px 3px 0px;
+                            border-image: url(:/qss_icons/rc/down_arrow_disabled.png);
+                            height: 10px;
+                            width: 10px;
+                            subcontrol-position: bottom;
+                            subcontrol-origin: margin;
+                            }
+
+                            QScrollBar::sub-line:vertical:hover,QScrollBar::sub-line:vertical:on
+                            {
+
+                            border-image: url(:/qss_icons/rc/up_arrow.png);
+                            height: 10px;
+                            width: 10px;
+                            subcontrol-position: top;
+                            subcontrol-origin: margin;
+                            }
+
+
+                            QScrollBar::add-line:vertical:hover, QScrollBar::add-line:vertical:on
+                            {
+                            border-image: url(:/qss_icons/rc/down_arrow.png);
+                            height: 10px;
+                            width: 10px;
+                            subcontrol-position: bottom;
+                            subcontrol-origin: margin;
+                            }
+
+                            QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical
+                            {
+                            background: none;
+                            }
+
+
+                            QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical
+                            {
+                            background: none;
+                            }
+
+
+                            QScrollBar{
+                            background-color: transparent;
+                            }
+                        </string>
+                    </property>
+                    <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>QFrame::Sunken</enum>
+                    </property>
+                    <property name="lineWidth">
+                        <number>8</number>
+                    </property>
+                    <property name="verticalScrollBarPolicy">
+                        <enum>Qt::ScrollBarAlwaysOn</enum>
+                    </property>
+                    <property name="widgetResizable">
+                        <bool>true</bool>
+                    </property>
+                    <property name="alignment">
+                        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                    </property>
+                    <widget class="QWidget" name="scrollAreaWidgetContents">
+                        <property name="geometry">
+                            <rect>
+                                <x>0</x>
+                                <y>0</y>
+                                <width>347</width>
+                                <height>170</height>
+                            </rect>
+                        </property>
+                        <property name="font">
+                            <font>
+                                <pointsize>16</pointsize>
+                            </font>
+                        </property>
+                        <layout class="QVBoxLayout">
+                            <item>
+                                <widget class="QLabel" name="stateLabel">
+                                    <property name="maximumSize">
+                                        <size>
+                                            <width>16777215</width>
+                                            <height>25</height>
+                                        </size>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <family>Yu Gothic UI Light</family>
+                                            <pointsize>10</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string>TextLabel</string>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item>
+                                <widget class="QCheckBox" name="SrCheckBox">
+                                    <property name="font">
+                                        <font>
+                                            <pointsize>11</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string>CheckBox</string>
+                                    </property>
+                                </widget>
+                            </item>
+                        </layout>
+                    </widget>
+                </widget>
+            </widget>
+            <widget class="Line" name="line">
+                <property name="geometry">
+                    <rect>
+                        <x>440</x>
+                        <y>330</y>
+                        <width>380</width>
+                        <height>16</height>
+                    </rect>
+                </property>
+                <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                </property>
+            </widget>
+            <widget class="Line" name="line_2">
+                <property name="geometry">
+                    <rect>
+                        <x>440</x>
+                        <y>149</y>
+                        <width>380</width>
+                        <height>16</height>
+                    </rect>
+                </property>
+                <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                </property>
+            </widget>
+            <widget class="Line" name="line_3">
+                <property name="geometry">
+                    <rect>
+                        <x>440</x>
+                        <y>156</y>
+                        <width>3</width>
+                        <height>180</height>
+                    </rect>
+                </property>
+                <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                </property>
+            </widget>
+            <widget class="Line" name="line_4">
+                <property name="geometry">
+                    <rect>
+                        <x>820</x>
+                        <y>156</y>
+                        <width>3</width>
+                        <height>180</height>
+                    </rect>
+                </property>
+                <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                </property>
+            </widget>
+            <widget class="Line" name="line_5">
+                <property name="geometry">
+                    <rect>
+                        <x>380</x>
+                        <y>166</y>
+                        <width>3</width>
+                        <height>170</height>
+                    </rect>
+                </property>
+                <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                </property>
+            </widget>
+            <widget class="Line" name="line_6">
+                <property name="geometry">
+                    <rect>
+                        <x>20</x>
+                        <y>159</y>
+                        <width>361</width>
+                        <height>16</height>
+                    </rect>
+                </property>
+                <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                </property>
+            </widget>
+            <widget class="Line" name="line_7">
+                <property name="geometry">
+                    <rect>
+                        <x>20</x>
+                        <y>330</y>
+                        <width>361</width>
+                        <height>16</height>
+                    </rect>
+                </property>
+                <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                </property>
+            </widget>
+            <widget class="Line" name="line_8">
+                <property name="geometry">
+                    <rect>
+                        <x>20</x>
+                        <y>166</y>
+                        <width>3</width>
+                        <height>170</height>
+                    </rect>
+                </property>
+                <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                </property>
+            </widget>
+            <widget class="QFrame" name="state_frame">
+                <property name="geometry">
+                    <rect>
+                        <x>21</x>
+                        <y>167</y>
+                        <width>359</width>
+                        <height>170</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <weight>50</weight>
+                        <bold>false</bold>
+                    </font>
+                </property>
+                <property name="styleSheet">
+                    <string notr="true">background-color: white;
+                    </string>
+                </property>
+                <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QScrollArea" name="state_list_area">
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>4</y>
+                            <width>341</width>
+                            <height>161</height>
+                        </rect>
+                    </property>
+                    <property name="autoFillBackground">
+                        <bool>true</bool>
+                    </property>
+                    <property name="styleSheet">
+                        <string notr="true">
+                            QScrollArea {
+                            background:white;
+                            border: 6px black;
+                            background-color: white;
+                            }
+
+                            QScrollBar {
+                            background:white;
+                            background: white;
+                            border-radius: 5px;
+                            }
+
+                            QScrollBar:vertical {
+                            background:white;
+                            width: 13px;
+                            }
+
+                            QScrollBar::handle:vertical {
+                            width: 25px;
+                            min-height: 10px;
+                            }
+
+                            QScrollBar::add-line {
+                            border: none;
+                            background: none;
+                            }
+
+                            QScrollBar::sub-line {
+                            border: none;
+                            background: none;
+                            }
+
+
+                            QScrollBar::handle {
+                            background: rgb(58,168, 138);
+                            border-radius: 6px;
+                            }
+
+
+                            /* QScrollBar:vertical
+                            {
+                            background-color: rgb(229, 229, 229);
+                            width: 15px;
+                            margin: 15px 3px 15px 3px;
+                            border: 5px white;
+                            border-radius: 4px;
+                            }
+
+                            QScrollBar::handle:vertical
+                            {
+                            background-color: rgb(58, 168, 138);
+                            min-height: 5px;
+                            border-radius: 4px;
+                            }
+
+                            QScrollBar::sub-line:vertical
+                            {
+                            margin: 3px 0px 3px 0px;
+                            border-image: url(:/qss_icons/rc/up_arrow_disabled.png);
+                            height: 10px;
+                            width: 10px;
+                            subcontrol-position: top;
+                            subcontrol-origin: margin;
+                            }
+
+                            QScrollBar::add-line:vertical
+                            {
+                            margin: 3px 0px 3px 0px;
+                            border-image: url(:/qss_icons/rc/down_arrow_disabled.png);
+                            height: 10px;
+                            width: 10px;
+                            subcontrol-position: bottom;
+                            subcontrol-origin: margin;
+                            }
+
+                            QScrollBar::sub-line:vertical:hover,QScrollBar::sub-line:vertical:on
+                            {
+
+                            border-image: url(:/qss_icons/rc/up_arrow.png);
+                            height: 10px;
+                            width: 10px;
+                            subcontrol-position: top;
+                            subcontrol-origin: margin;
+                            }
+
+
+                            QScrollBar::add-line:vertical:hover, QScrollBar::add-line:vertical:on
+                            {
+                            border-image: url(:/qss_icons/rc/down_arrow.png);
+                            height: 10px;
+                            width: 10px;
+                            subcontrol-position: bottom;
+                            subcontrol-origin: margin;
+                            }
+
+                            QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical
+                            {
+                            background: none;
+                            }
+
+
+                            QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical
+                            {
+                            background: none;
+                            }
+
+
+                            QScrollBar{
+                            background-color: transparent;
+                            }
+                        </string>
+                    </property>
+                    <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>QFrame::Sunken</enum>
+                    </property>
+                    <property name="lineWidth">
+                        <number>8</number>
+                    </property>
+                    <property name="verticalScrollBarPolicy">
+                        <enum>Qt::ScrollBarAlwaysOn</enum>
+                    </property>
+                    <property name="horizontalScrollBarPolicy">
+                        <enum>Qt::ScrollBarAsNeeded</enum>
+                    </property>
+                    <property name="widgetResizable">
+                        <bool>true</bool>
+                    </property>
+                    <property name="alignment">
+                        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                    </property>
+                    <widget class="QWidget" name="scrollAreaWidgetContents_2">
+                        <property name="geometry">
+                            <rect>
+                                <x>0</x>
+                                <y>0</y>
+                                <width>328</width>
+                                <height>161</height>
+                            </rect>
+                        </property>
+                        <property name="font">
+                            <font>
+                                <pointsize>16</pointsize>
+                            </font>
+                        </property>
+                        <layout class="QVBoxLayout" name="_2">
+                            <item>
+                                <widget class="QCheckBox" name="StateCheckBox">
+                                    <property name="font">
+                                        <font>
+                                            <pointsize>11</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string>CheckBox</string>
+                                    </property>
+                                </widget>
+                            </item>
+                        </layout>
+                    </widget>
+                </widget>
+            </widget>
+            <widget class="QLabel" name="static_7">
+                <property name="geometry">
+                    <rect>
+                        <x>20</x>
+                        <y>110</y>
+                        <width>141</width>
+                        <height>25</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <family>Yu Gothic UI Light</family>
+                        <pointsize>13</pointsize>
+                    </font>
+                </property>
+                <property name="text">
+                    <string>SELECT STATES:</string>
+                </property>
+            </widget>
+            <widget class="QLabel" name="static_8">
+                <property name="geometry">
+                    <rect>
+                        <x>440</x>
+                        <y>110</y>
+                        <width>141</width>
+                        <height>25</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <family>Yu Gothic UI Light</family>
+                        <pointsize>13</pointsize>
+                    </font>
+                </property>
+                <property name="text">
+                    <string>SELECT SR(S):</string>
+                </property>
+            </widget>
+            <widget class="QComboBox" name="stateSelectionBox">
+                <property name="geometry">
+                    <rect>
+                        <x>20</x>
+                        <y>136</y>
+                        <width>361</width>
+                        <height>26</height>
+                    </rect>
+                </property>
+            </widget>
+            <zorder>frame</zorder>
+            <zorder>saveReport</zorder>
+            <zorder>static_6</zorder>
+            <zorder>fromDateEdit</zorder>
+            <zorder>static_5</zorder>
+            <zorder>toDateEdit</zorder>
+            <zorder>generationOptionBox</zorder>
+            <zorder>fromDatePickFrame</zorder>
+            <zorder>toDatePickFrame</zorder>
+            <zorder>sr_frame</zorder>
+            <zorder>line</zorder>
+            <zorder>line_2</zorder>
+            <zorder>line_3</zorder>
+            <zorder>line_4</zorder>
+            <zorder>line_5</zorder>
+            <zorder>line_6</zorder>
+            <zorder>line_7</zorder>
+            <zorder>line_8</zorder>
+            <zorder>state_frame</zorder>
+            <zorder>static_7</zorder>
+            <zorder>static_8</zorder>
+            <zorder>stateSelectionBox</zorder>
+        </widget>
+    </widget>
+    <resources/>
+    <connections/>
+</ui>
